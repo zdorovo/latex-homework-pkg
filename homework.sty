@@ -1,0 +1,10 @@
+\ProvidesPackage{homework}
+
+\usepackage{etoolbox}
+
+\newcounter{pnum}
+\setcounter{pnum}{1}
+\newcounter{subnum}
+\newcommand{\prob}[1][]{\setcounter{subnum}{1} \subsection*{Problem \arabic{pnum}}\ifblank{#1}{}{\emph{#1}\vspace{2ex}\ \\}\stepcounter{pnum}}
+\newcommand{\subp}[1][]{\ifnumequal{\value{subnum}}{1}{}{\ \\}%
+\noindent{\bf \alph{subnum}}\hspace*{1ex}\ifblank{#1}{}{\emph{#1}\vspace{1ex}\\} \stepcounter{subnum}}
