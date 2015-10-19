@@ -27,3 +27,4 @@ You'll get a weird error if your problem statement has any sqauare brackets in i
 To-do list
 ----------
 Make subproblem numbers stick out into the left margin
+Also, it would be better if problem number was optional. I should make a \prob\* command. Also, maybe the problem statement should be a required command---that would get rid of the square brackets issue. It's good practice to always write it, anyway. 
